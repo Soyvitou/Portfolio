@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.covers
+{
+    background-image: url(../image/cover.jpg);
+    background-position: center;
+    background-size: cover;
+    border-style: groove;
+    border-width: 7px;
+    border-color: aquamarine;
+}
+.font-shadows
+{
+   font-family: fontstyle;
+}
