@@ -31,4 +31,17 @@
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
+   border-width: 2px;
+   border-style: groove;
+   border-color: rgb(0, 255, 38);
+}
+.img-calculator
+{
+   background-image: url(../image/calculator.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-width: 2px;
+   border-style: groove;
+   border-color: brown;
 }
