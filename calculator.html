@@ -30,28 +30,28 @@
         </div>
     </section>
     <section class="mt-7 border-4 border-double right outline outline-offset-2 outline-blue-500">
-        <div id="display" class="w-full h-24 bg-blue-500 border-4 border-double right outline outline-offset-2 outline-blue-500"></div>
-        <div id="button" class="buttons flex justify-center-full h-full bg-yellow-400 grid grid-cols-4 px-2 py-8 ">
-            <div class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">C</div>
-            <div class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">/</div>
-            <div class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">*</div>
-            <div class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">&larr;</div>
-            <div class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">7</div>
-            <div class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">8</div>
-            <div class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">9</div>
-            <div class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">-</div>
-            <div class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">4</div>
-            <div class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">5</div>
-            <div class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">6</div>
-            <div class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">+</div>
-            <div class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">1</div>
-            <div class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">2</div>
-            <div class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">3</div>
-            <div class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">.</div>
-            <div class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">(</div>
-            <div class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">0</div>
-            <div class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">)</div>
-            <div class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700" id="equal">=</div>
+        <div id="display" class="w-full h-24 bg-blue-500 border-4 border-double outline outline-offset-2 outline-blue-500 text-5xl text-right"></div>
+        <div  class="buttons justify-center-full h-full bg-yellow-400 grid grid-cols-4 px-2 py-8 ">
+            <div  onclick="clearr()" class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">C</div>
+            <div  onclick="changeDispay('/')" class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">/</div>
+            <div  onclick="changeDispay('*')" class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">*</div>
+            <div  onclick="deletes()" class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">&larr;</div>
+            <div  onclick="changeDispay('7')" class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">7</div>
+            <div  onclick="changeDispay('8')" class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">8</div>
+            <div  onclick="changeDispay('9')" class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">9</div>
+            <div  onclick="changeDispay('-')" class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">-</div>
+            <div  onclick="changeDispay('4')" class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">4</div>
+            <div  onclick="changeDispay('5')" class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">5</div>
+            <div  onclick="changeDispay('6')" class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">6</div>
+            <div  onclick="changeDispay('+')" class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">+</div>
+            <div  onclick="changeDispay('1')" class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">1</div>
+            <div  onclick="changeDispay('2')" class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">2</div>
+            <div  onclick="changeDispay('3')" class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">3</div>
+            <div  onclick="changeDispay('.')" class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">.</div>
+            <div  onclick="changeDispay('(')" class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">(</div>
+            <div  onclick="changeDispay('0')" class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">0</div>
+            <div  onclick="changeDispay(')')" class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700">)</div>
+            <div  onclick="equal('=')" class="button  flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700" id="equal">=</div>
         </div> 
     </section>
     <script src="./calculate.js"></script>

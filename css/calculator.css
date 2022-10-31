@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components { 
+    .btnstyle
+    {
+       @apply flex justify-center my-2 mx-1.5 text-3xl border-2 py-6 rounded outline outline-offset-2 outline-blue-500 active:bg-cyan-700;
+    }
+}
+
 .navsize{
     position: absolute;
     top: 0;
